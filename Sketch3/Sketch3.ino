@@ -9,7 +9,7 @@ const int ledPin = 2;          // 内置 LED 引脚（大多数 ESP32 开发板�
 const int pwmChannel = 0;      // LEDC 通道（0~15 任选）
 const int freq = 5000;         // PWM 频率（Hz）
 const int resolution = 8;      // 分辨率（8 位：0~255）
-const int delayMs = 10;        // 每一步的延时（ms），可通过修改此数值改变呼吸速度
+const int delayMs = 1;        // 每一步的延时（ms），可通过修改此数值改变呼吸速度
 
 int cycleCount = 0;            // 呼吸周期计数器
 
