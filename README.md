@@ -10,7 +10,7 @@
 
 
 
-\## Sketch（实验一）：ESP32 LED 亮灭控制
+\## lab01（实验一）：ESP32 LED 亮灭控制
 
 \- 使用 Visual Studio 对 ESP32 开发板编程
 
@@ -20,7 +20,7 @@
 
 
 
-\## Sketch2（实验二）：基于 millis() 的多 LED SOS 信号
+\##  lab02（实验二）：基于 millis() 的多 LED SOS 信号
 
 \- 使用 `millis()` 非阻塞方式控制板载 LED 和三个外接 LED 同时闪烁 SOS 信号。
 
@@ -32,7 +32,7 @@
 
 
 
-\## Sketch3（实验三）：双 LED 呼吸灯（板载 + 外接）
+\##  lab03（实验三）：双 LED 呼吸灯（板载 + 外接）
 
 \- 同时控制板载 LED (GPIO2) 和一个外接 LED (GPIO5) 实现同步呼吸效果。
 
