@@ -1,0 +1,20 @@
+// 使用 millis() 实现非阻塞 LED 闪烁（1Hz）
+// 适用于 ESP32 开发板
+
+const int ledPin = LED_BUILTIN;  // ESP32 板载 LED 引脚（通常为 GPIO2）
+unsigned long previousMillis = 0; // 上一次 LED 状态改变的时间
+const long interval = 500;        // 闪烁间隔（毫秒），500ms 实现 1Hz 频率
+
+void setup() {
+  pinMode(ledPin, OUTPUT);        // 设置 LED 引脚为输出模式
+}
+
+void loop() {
+  unsigned long currentMillis = millis(); // 获取当前系统运行时间（毫秒）
+
+  // 检查是否达到切换间隔
+  if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;        // 保存本次切换时间
+    digitalWrite(ledPin, !digitalRead(ledPin)); // 翻转 LED 状态
+  }
+}
